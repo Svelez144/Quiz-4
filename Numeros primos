@@ -1,0 +1,9 @@
+def num_primo(num):
+  if num < 2:     #Si es menos que 2 no es primo, por lo tanto devolverá Falso
+    return False
+  for i in range(2, num):  #Un rango desde el dos hasta el numero que nosotros elijamos
+    if num % i == 0:    #si el resto da 0 no es primo, por lo tanto devuelve Falso
+        return False
+    return True    #de lo contrario devuelve Verdadero
+
+print num_primo(3)    #Para comprobarlo llamamos a la función.
